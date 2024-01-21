@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 
 const Projects = () => {
   const projects = [
@@ -11,20 +12,26 @@ const Projects = () => {
   ]
   return (
     <section id='projects'>
-      <h2 className='text-center mb-5  fw-bold display-5'>My Projects</h2>
+      <Helmet>
+        <title>Ankit Jha - My Projects</title>
+        <meta name="description" content="Explore Ankit Jha's portfolio of projects. View images and details of web development projects."/>
+        {/* Add more meta tags as needed for your specific requirements */}
+      </Helmet>
+
+      <h1 className='text-center mb-5 fw-bold display-5'>My Projects</h1>
       <div className="row">
-       
-       {
-        projects.map((project)=>{
-          return  <div className="col-md-4" key={project.id}>
-          <div className="card">
-            <img src={project.src} alt="project" className='card-img-top' />
-          </div>
-        </div>
-        })
-       }
+        {
+          projects.map((project) => (
+            <div className="col-md-4" key={project.id} data-aos="fade-up">
+              <article>
+                <div className="card">
+                  <img src={project.src} alt={`Project ${project.id}`} className='card-img-top' />
+                </div>
+              </article>
+            </div>
+          ))
+        }
       </div>
-      
     </section>
   )
 }

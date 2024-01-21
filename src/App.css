@@ -62,6 +62,9 @@ section{
       -moz-box-shadow: none!important;
       box-shadow: none!important;
   }
+  body{
+    overflow-x: hidden;
+  }
 @media (max-width:768px) {
 
   #home img{
@@ -71,7 +74,7 @@ section{
   *{
     justify-content: center;
   }
-  h2{
+  h1{
     text-align: center;
     margin-top: 10px;
   }

@@ -13,7 +13,7 @@ const Navbar = () => {
     document.body.classList.replace('light', 'dark');
   }
   return (
-    <nav className={`navbar navbar-expand-lg fixed-top  ${isDark ? 'bg-white' : 'bg-black'}`}>
+    <nav className={`navbar navbar-expand-lg fixed-top  ${isDark ? 'bg-white' : 'bg-black'}`} data-aos="fade-down">
       <div className="container">
         <h2 className="fs-5">
           <FaCode size={30} />
