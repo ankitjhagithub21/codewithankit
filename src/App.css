@@ -2,6 +2,7 @@
 
 body {
   font-family: "Noto Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .dark{
@@ -45,10 +46,15 @@ body::-webkit-scrollbar-thumb {
 }
 a{
   text-decoration: none;
+  
 }
 section{
   
   padding: 100px 0px;
+}
+#home a:hover{
+  transition: 0.5s;
+  transform: scale(1.20);
 }
 .card{
   cursor: pointer;
@@ -57,14 +63,19 @@ section{
 .card:hover{
   transform: scale(1.02);
 }
-.form-control:focus {border-color:rgba(100,100,100,1)!important;
+.form-control{
+  background-color: rgba(66, 61, 61, 0.3);
+  border: none !important;
+  color: white !important;
+  
+}
+.form-control:focus {
+  background: rgba(8, 8, 8, 0.808) !important;
   -webkit-box-shadow: none!important;
       -moz-box-shadow: none!important;
       box-shadow: none!important;
   }
-  body{
-    overflow-x: hidden;
-  }
+ 
 @media (max-width:768px) {
 
   #home img{

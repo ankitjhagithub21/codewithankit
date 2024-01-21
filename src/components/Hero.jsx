@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa6';
+import { FaFacebook, FaGithub} from 'react-icons/fa6';
+import { FaLinkedin } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
@@ -19,10 +21,14 @@ const Hero = () => {
             />
           </div>
           <div className='d-flex fs-4 gap-2 align-items-center'>
-            <FaFacebook />
-            <FaLinkedinIn />
-            <FaInstagram />
+           <a href="https://www.facebook.com/ankitjha2018" target='_blank'> <FaFacebook /></a>
+            <a href="https://www.linkedin.com/in/ankitjha3731/" target='_blank'><FaLinkedin /></a>
+           <a href="https://www.instagram.com/its.ankitjha/" className='fs-3' target='_blank'>
+           <AiFillInstagram />
+           </a>
+            <a href="https://github.com/ankitjhagithub21" target='_blank'>
             <FaGithub />
+            </a>
           </div>
         </div>
         <div className="col-md-4 text-center" data-aos="fade-left">

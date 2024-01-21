@@ -15,10 +15,10 @@ const Projects = () => {
       <Helmet>
         <title>Ankit Jha - My Projects</title>
         <meta name="description" content="Explore Ankit Jha's portfolio of projects. View images and details of web development projects."/>
-        {/* Add more meta tags as needed for your specific requirements */}
+       
       </Helmet>
 
-      <h1 className='text-center mb-5 fw-bold display-5'>My Projects</h1>
+      <h1 className='text-center mb-5 fw-bold display-5' data-aos="fade-up">My Projects</h1>
       <div className="row">
         {
           projects.map((project) => (

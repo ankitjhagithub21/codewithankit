@@ -16,7 +16,7 @@ const App = () => {
     <header>
       <Navbar/>
     </header>
-    <main>
+    <main className='container'>
     <Home/>
     </main>
     <Footer/>
