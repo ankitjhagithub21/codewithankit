@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
         <div className="col-md-4 text-center" data-aos="fade-left">
           <img
-            src="/android-chrome-512x512.png"
+            src="/ankitjha.png"
             alt="Ankit Jha"
             className='img-fluid border rounded-circle'
             loading="lazy"
